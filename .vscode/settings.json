@@ -4,5 +4,5 @@
     "**/node_modules": true,
     "**/yarn.lock": true
   },
-  "cSpell.words": ["firefox", "googlemaps"]
+  "cSpell.words": ["esnext", "firefox", "googlemaps"]
 }
