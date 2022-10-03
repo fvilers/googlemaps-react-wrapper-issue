@@ -9,7 +9,7 @@ function GoogleMap({ options }: Props) {
   const [map, setMap] = useState<google.maps.Map>();
 
   useEffect(() => {
-    if (ref.current !== null && map !== undefined) {
+    if (ref.current !== null && map === undefined) {
       setMap(new window.google.maps.Map(ref.current, options ?? {}));
     }
   }, [map, options]);
