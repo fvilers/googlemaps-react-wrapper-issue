@@ -21,6 +21,7 @@ function App() {
       >
         <GoogleMap
           options={{ center: { lat: -34.397, lng: 150.644 }, zoom: 4 }}
+          style={{ height: "400px", width: "100%" }}
         />
       </Wrapper>
     </div>

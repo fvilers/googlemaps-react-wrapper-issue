@@ -1,10 +1,11 @@
-import { useEffect, useRef, useState } from "react";
+import { CSSProperties, useEffect, useRef, useState } from "react";
 
 type Props = {
   options?: google.maps.MapOptions;
+  style?: CSSProperties | undefined;
 };
 
-function GoogleMap({ options }: Props) {
+function GoogleMap({ options, style }: Props) {
   const ref = useRef<HTMLDivElement>(null);
   const [map, setMap] = useState<google.maps.Map>();
 
@@ -14,7 +15,7 @@ function GoogleMap({ options }: Props) {
     }
   }, [map, options]);
 
-  return <div ref={ref} />;
+  return <div ref={ref} style={style} />;
 }
 
 export default GoogleMap;
