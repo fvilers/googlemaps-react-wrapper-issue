@@ -1,3 +1,7 @@
+# Solution
+
+A solution is available in the `how-to-fix` branch. This repository will be archived.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
